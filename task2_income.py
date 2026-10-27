@@ -69,3 +69,13 @@ print(q2_income)
 
 print("\nNet income for Q2:")
 print(q2_net_income)
+
+q2_totals = q2_net_income.sum(axis=1)
+
+print("\n--- Total Net Income by Department for Q2 ---")
+for department, total in enumerate(q2_totals, start=1):
+    print(f"Department {department}: {total:.2f} EUR")
+
+
+
+
